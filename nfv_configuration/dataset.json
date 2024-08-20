@@ -1,0 +1,1106 @@
+[
+    {
+        "intents": [
+            "deploy a generic virtual network function named \"vnf-instance\"",
+            "create a VNF with the name \"vnf-instance\" using the generic type",
+            "initiate the creation of a VNF named \"vnf-instance\" with generic specifications",
+            "generate a VNF instance named \"vnf-instance\" with generic attributes",
+            "establish a VNF called \"vnf-instance\" with generic characteristics",
+            "set up a VNF instance named \"vnf-instance\" using the generic type",
+            "create a virtual network function named \"vnf-instance\" with generic specifications",
+            "deploy a VNF instance named \"vnf-instance\" with generic attributes",
+            "initialize the creation of a generic VNF named \"vnf-instance\"",
+            "generate a generic VNF instance with the name \"vnf-instance\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "vnf-instance",
+                "vnf_type": "generic",
+                "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "deploy a VNF named \"custom-vnf\"",
+            "create a virtual network function called \"custom-vnf\"",
+            "initialize the creation of a VNF with the name \"custom-vnf\"",
+            "generate a VNF instance named \"custom-vnf\"",
+            "establish a VNF with the name \"custom-vnf\"",
+            "set up a VNF instance named \"custom-vnf\"",
+            "create a virtual network function named \"custom-vnf\"",
+            "deploy a VNF instance named \"custom-vnf\"",
+            "initiate the creation of a VNF named \"custom-vnf\"",
+            "generate a VNF with the name \"custom-vnf\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "custom-vnf",
+                "vnf_type": "generic",
+                "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "create a generic VNF with the name \"instance-1\"",
+            "deploy a VNF instance named \"instance-1\" using the generic type",
+            "initialize the creation of a VNF named \"instance-1\" with generic specifications",
+            "generate a VNF instance named \"instance-1\" with generic attributes",
+            "establish a VNF called \"instance-1\" with generic characteristics",
+            "set up a VNF instance named \"instance-1\" using the generic type",
+            "create a virtual network function named \"instance-1\" with generic specifications",
+            "deploy a VNF instance named \"instance-1\" with generic attributes",
+            "initiate the creation of a generic VNF named \"instance-1\"",
+            "generate a generic VNF instance with the name \"instance-1\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "instance-1",
+                "vnf_type": "generic",
+                "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "deploy a VNF named \"new-instance\"",
+            "create a virtual network function called \"new-instance\"",
+            "initialize the creation of a VNF with the name \"new-instance\"",
+            "generate a VNF instance named \"new-instance\"",
+            "establish a VNF with the name \"new-instance\"",
+            "set up a VNF instance named \"new-instance\"",
+            "create a virtual network function named \"new-instance\"",
+            "deploy a VNF instance named \"new-instance\"",
+            "initiate the creation of a VNF named \"new-instance\"",
+            "generate a VNF with the name \"new-instance\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "new-instance",
+                "vnf_type": "generic",
+                "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "create a generic VNF with the name \"vnf-1\"",
+            "deploy a VNF instance named \"vnf-1\" using the generic type",
+            "initialize the creation of a VNF named \"vnf-1\" with generic specifications",
+            "generate a VNF instance named \"vnf-1\" with generic attributes",
+            "establish a VNF called \"vnf-1\" with generic characteristics",
+            "set up a VNF instance named \"vnf-1\" using the generic type",
+            "create a virtual network function named \"vnf-1\" with generic specifications",
+            "deploy a VNF instance named \"vnf-1\" with generic attributes",
+            "initiate the creation of a generic VNF named \"vnf-1\"",
+            "generate a generic VNF instance with the name \"vnf-1\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "vnf-1",
+                "vnf_type": "generic",
+                "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"security-sfc\" with firewall and ids. It should have a maximum bandwidth of 100Mbps and low-delay requirement. It should filter all traffic on ports 22 and 443",
+            "deploy an SFC named \"security-sfc\" with firewall and ids. Set the maximum bandwidth to 100Mbps and low-delay requirement. Apply traffic filtering for ports 22 and 443",
+            "initiate the creation of an SFC named \"security-sfc\" containing firewall and ids. Specify a maximum bandwidth of 100Mbps and low-delay requirement. Implement traffic filtering for ports 22 and 443",
+            "generate an SFC instance named \"security-sfc\" with firewall and ids. Define a maximum bandwidth of 100Mbps and low-delay requirement. Include traffic filtering for ports 22 and 443",
+            "establish an SFC called \"security-sfc\" with firewall and ids. Set the maximum bandwidth to 100Mbps and low-delay requirement. Configure traffic filtering for ports 22 and 443",
+            "set up an SFC instance named \"security-sfc\" with firewall and ids. Choose a maximum bandwidth of 100Mbps and low-delay requirement. Apply traffic filtering for ports 22 and 443",
+            "create an SFC named \"security-sfc\" with firewall and ids. The maximum bandwidth should be 100Mbps and low-delay requirement. Filter traffic on ports 22 and 443",
+            "deploy an SFC instance named \"security-sfc\" with firewall and ids. Specify a maximum bandwidth of 100Mbps and low-delay requirement. Implement traffic filtering for ports 22 and 443",
+            "initialize the creation of an SFC named \"security-sfc\" containing firewall and ids. Set the maximum bandwidth to 100Mbps and low-delay requirement. Include traffic filtering for ports 22 and 443",
+            "generate an SFC named \"security-sfc\" with firewall and ids. The maximum bandwidth should be 100Mbps and low-delay requirement. Apply traffic filtering for ports 22 and 443"
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "security-sfc",
+                "max_bandwidth_mbps": 100,
+                "delay_requirement": "low-delay",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:22-22",
+                    "0.0.0.0/0 -> 0.0.0.0/0:443-443"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "fw",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "ids",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "deploy an SFC named \"data-sfc\" with lb and ids. It should have a maximum bandwidth of 250Mbps and real-time delay requirement. It should filter all traffic on ports 80 and 443",
+            "create an SFC named \"data-sfc\" with lb and ids. Set the maximum bandwidth to 250Mbps and real-time delay requirement. Apply traffic filtering for ports 80 and 443",
+            "initiate the creation of an SFC named \"data-sfc\" containing lb and ids. Specify a maximum bandwidth of 250Mbps and real-time delay requirement. Implement traffic filtering for ports 80 and 443",
+            "generate an SFC instance named \"data-sfc\" with lb and ids. Define a maximum bandwidth of 250Mbps and real-time delay requirement. Include traffic filtering for ports 80 and 443",
+            "establish an SFC called \"data-sfc\" with lb and ids. Set the maximum bandwidth to 250Mbps and real-time delay requirement. Configure traffic filtering for ports 80 and 443",
+            "set up an SFC instance named \"data-sfc\" with lb and ids. Choose a maximum bandwidth of 250Mbps and real-time delay requirement. Apply traffic filtering for ports 80 and 443",
+            "create an SFC named \"data-sfc\" with lb and ids. The maximum bandwidth should be 250Mbps and real-time delay requirement. Filter traffic on ports 80 and 443",
+            "deploy an SFC instance named \"data-sfc\" with lb and ids. Specify a maximum bandwidth of 250Mbps and real-time delay requirement. Implement traffic filtering for ports 80 and 443",
+            "initialize the creation of an SFC named \"data-sfc\" containing lb and ids. Set the maximum bandwidth to 250Mbps and real-time delay requirement. Include traffic filtering for ports 80 and 443",
+            "generate an SFC named \"data-sfc\" with lb and ids. The maximum bandwidth should be 250Mbps and real-time delay requirement. Apply traffic filtering for ports 80 and 443"
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "data-sfc",
+                "max_bandwidth_mbps": 250,
+                "delay_requirement": "real-time",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:80-80",
+                    "0.0.0.0/0 -> 0.0.0.0/0:443-443"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "lb",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "ids",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"web-sfc\" with lb and fw. It should have a maximum bandwidth of 500Mbps and low-delay requirement. It should filter all traffic on ports 80 and 443",
+            "deploy an SFC named \"web-sfc\" with lb and fw. Set the maximum bandwidth to 500Mbps and low-delay requirement. Apply traffic filtering for ports 80 and 443",
+            "initiate the creation of an SFC named \"web-sfc\" containing lb and fw. Specify a maximum bandwidth of 500Mbps and low-delay requirement. Implement traffic filtering for ports 80 and 443",
+            "generate an SFC instance named \"web-sfc\" with lb and fw. Define a maximum bandwidth of 500Mbps and low-delay requirement. Include traffic filtering for ports 80 and 443",
+            "establish an SFC called \"web-sfc\" with lb and fw. Set the maximum bandwidth to 500Mbps and low-delay requirement. Configure traffic filtering for ports 80 and 443",
+            "set up an SFC instance named \"web-sfc\" with lb and fw. Choose a maximum bandwidth of 500Mbps and low-delay requirement. Apply traffic filtering for ports 80 and 443",
+            "create an SFC named \"web-sfc\" with lb and fw. The maximum bandwidth should be 500Mbps and low-delay requirement. Filter traffic on ports 80 and 443",
+            "deploy an SFC instance named \"web-sfc\" with lb and fw. Specify a maximum bandwidth of 500Mbps and low-delay requirement. Implement traffic filtering for ports 80 and 443",
+            "initialize the creation of an SFC named \"web-sfc\" containing lb and fw. Set the maximum bandwidth to 500Mbps and low-delay requirement. Include traffic filtering for ports 80 and 443",
+            "generate an SFC named \"web-sfc\" with lb and fw. The maximum bandwidth should be 500Mbps and low-delay requirement. Apply traffic filtering for ports 80 and 443"
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "web-sfc",
+                "max_bandwidth_mbps": 500,
+                "delay_requirement": "low-delay",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:80-80",
+                    "0.0.0.0/0 -> 0.0.0.0/0:443-443"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "lb",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "fw",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "deploy an SFC named \"video-sfc\" with ids and lb. It should have a maximum bandwidth of 200Mbps and real-time delay requirement. It should filter all traffic on ports 554 and range 6000-7000",
+            "create an SFC named \"video-sfc\" with ids and lb. Set the maximum bandwidth to 200Mbps and real-time delay requirement. Apply traffic filtering for ports 554 and range 6000-7000",
+            "initiate the creation of an SFC named \"video-sfc\" containing ids and lb. Specify a maximum bandwidth of 200Mbps and real-time delay requirement. Implement traffic filtering for ports 554 and range 6000-7000",
+            "generate an SFC instance named \"video-sfc\" with ids and lb. Define a maximum bandwidth of 200Mbps and real-time delay requirement. Include traffic filtering for ports 554 and range 6000-7000",
+            "establish an SFC called \"video-sfc\" with ids and lb. Set the maximum bandwidth to 200Mbps and real-time delay requirement. Configure traffic filtering for ports 554 and range 6000-7000",
+            "set up an SFC instance named \"video-sfc\" with ids and lb. Choose a maximum bandwidth of 200Mbps and real-time delay requirement. Apply traffic filtering for ports 554 and range 6000-7000",
+            "create an SFC named \"video-sfc\" with ids and lb. The maximum bandwidth should be 200Mbps and real-time delay requirement. Filter traffic on ports 554 and range 6000-7000",
+            "deploy an SFC instance named \"video-sfc\" with ids and lb. Specify a maximum bandwidth of 200Mbps and real-time delay requirement. Implement traffic filtering for ports 554 and range 6000-7000",
+            "initialize the creation of an SFC named \"video-sfc\" containing ids and lb. Set the maximum bandwidth to 200Mbps and real-time delay requirement. Include traffic filtering for ports 554 and range 6000-7000",
+            "generate an SFC named \"video-sfc\" with ids and lb. The maximum bandwidth should be 200Mbps and real-time delay requirement. Apply traffic filtering for ports 554 and range 6000-7000"
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "video-sfc",
+                "max_bandwidth_mbps": 200,
+                "delay_requirement": "real-time",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:554-554",
+                    "0.0.0.0/0 -> 0.0.0.0/0:6000-7000"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "ids",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "lb",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"sfc-1\" with firewall and lb. It should have a maximum bandwidth of 1Gbps and low delay requirement. It should filter all incoming traffic on port 8080",
+            "deploy an SFC called \"sfc-1\" including firewall and lb. Set the maximum bandwidth to 1Gbps with low delay requirement. Filter all incoming traffic on port 8080.",
+            "initiate the creation of an SFC named \"sfc-1\" with firewall and lb. Specify a maximum bandwidth of 1Gbps and low delay requirement. Apply filtering for all incoming traffic on port 8080.",
+            "generate an SFC named \"sfc-1\" containing firewall and lb. Configure a maximum bandwidth of 1Gbps with low delay requirement. Apply filtering for all incoming traffic on port 8080.",
+            "establish an SFC called \"sfc-1\" with firewall and lb. Set the maximum bandwidth to 1Gbps with low delay requirement. Ensure filtering for all incoming traffic on port 8080.",
+            "set up an SFC instance named \"sfc-1\" with firewall and lb. Specify a maximum bandwidth of 1Gbps and low delay requirement. Apply filtering for all incoming traffic on port 8080.",
+            "create an SFC named \"sfc-1\" with firewall and lb. Set the maximum bandwidth to 1Gbps with low delay requirement. Ensure filtering for all incoming traffic on port 8080.",
+            "deploy an SFC instance named \"sfc-1\" containing firewall and lb. Specify a maximum bandwidth of 1Gbps and low delay requirement. Apply filtering for all incoming traffic on port 8080.",
+            "initialize the creation of an SFC called \"sfc-1\" with firewall and lb. Set the maximum bandwidth to 1Gbps and low delay requirement. Configure filtering for all incoming traffic on port 8080.",
+            "generate an SFC instance with the name \"sfc-1\" containing firewall and lb. Configure a maximum bandwidth of 1Gbps with low delay requirement. Apply filtering for all incoming traffic on port 8080."
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "sfc-1",
+                "max_bandwidth_mbps": 1000,
+                "delay_requirement": "low-delay",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:8080-8080"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "fw",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "lb",
+                        "flavor":  {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the attributes of the VNF named \"firewall-1\" to use 2 CPUs and 4GB RAM",
+            "modify the VNF named \"firewall-1\" to utilize 2 CPUs and 4GB RAM",
+            "adjust the configuration of the VNF named \"firewall-1\" to use 2 CPUs and 4GB RAM",
+            "change the VNF named \"firewall-1\" to have 2 CPUs and 4GB RAM",
+            "update the VNF named \"firewall-1\" with 2 CPUs and 4GB RAM",
+            "modify the configuration of the VNF named \"firewall-1\" to use 2 CPUs and 4GB RAM",
+            "adjust the attributes of the VNF named \"firewall-1\" to have 2 CPUs and 4GB RAM",
+            "change the attributes of the VNF named \"firewall-1\" to use 2 CPUs and 4GB RAM",
+            "update the VNF named \"firewall-1\" to have 2 CPUs and 4GB RAM",
+            "modify the VNF named \"firewall-1\" with 2 CPUs and 4GB RAM"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "firewall-1",
+                "flavor": {
+                    "cpu": 2,
+                    "ram_gb": 4
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the configuration of the VNF named \"lb-instance\" to use 4 CPUs and 8GB RAM",
+            "modify the VNF named \"lb-instance\" to utilize 4 CPUs and 8GB RAM",
+            "adjust the attributes of the VNF named \"lb-instance\" to have 4 CPUs and 8GB RAM",
+            "change the VNF named \"lb-instance\" to use 4 CPUs and 8GB RAM",
+            "update the VNF named \"lb-instance\" with 4 CPUs and 8GB RAM",
+            "modify the configuration of the VNF named \"lb-instance\" to utilize 4 CPUs and 8GB RAM",
+            "adjust the attributes of the VNF named \"lb-instance\" to use 4 CPUs and 8GB RAM",
+            "change the attributes of the VNF named \"lb-instance\" to have 4 CPUs and 8GB RAM",
+            "update the attributes of the VNF named \"lb-instance\" to use 4 CPUs and 8GB RAM",
+            "modify the VNF named \"lb-instance\" with 4 CPUs and 8GB RAM"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "lb-instance",
+                "flavor": {
+                    "cpu": 4,
+                    "ram_gb": 8
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the VNF named \"ids-1\" to use 8 cpus and 16G ram",
+            "modify the configuration of the VNF named \"ids-1\" to utilize 8 cpus and 16G ram",
+            "adjust the attributes of the VNF named \"ids-1\" to have 8 cpus and 16G ram",
+            "change the VNF named \"ids-1\" to use 8 cpus and 16G ram",
+            "update the configuration of the VNF named \"ids-1\" with 8 cpus and 16G ram",
+            "modify the VNF named \"ids-1\" to utilize 8 cpus and 16G ram",
+            "adjust the attributes of the VNF named \"ids-1\" to use 8 cpus and 16G ram",
+            "change the attributes of the VNF named \"ids-1\" to have 8 cpus and 16G ram",
+            "update the attributes of the VNF named \"ids-1\" with 8 cpus and 16G ram",
+            "modify the configuration of the VNF named \"ids-1\" to have 8 cpus and 16G ram"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "ids-1",
+                "flavor": {
+                    "cpu": 8,
+                    "ram_gb": 16
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the VNF named \"generic-vnf\" to use the flavor with 10G RAM",
+            "modify the configuration of the VNF named \"generic-vnf\" to utilize the flavor with 10G RAM",
+            "adjust the attributes of the VNF named \"generic-vnf\" to have the flavor with 10G RAM",
+            "change the VNF named \"generic-vnf\" to use the flavor with 10G RAM",
+            "update the configuration of the VNF named \"generic-vnf\" with the flavor with 10G RAM",
+            "modify the VNF named \"generic-vnf\" to utilize the flavor with 10G RAM",
+            "adjust the attributes of the VNF named \"generic-vnf\" to use the flavor with 10G RAM",
+            "change the attributes of the VNF named \"generic-vnf\" to have the flavor with 10G RAM",
+            "update the attributes of the VNF named \"generic-vnf\" with the flavor with 10G RAM",
+            "modify the configuration of the VNF named \"generic-vnf\" to have the flavor with 10G RAM"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "generic-vnf",
+                "flavor": {
+                    "ram_gb": 10
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the VNF named \"firewall-2\" to use the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "modify the configuration of the VNF named \"firewall-2\" to utilize the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "adjust the attributes of the VNF named \"firewall-2\" to have the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "change the VNF named \"firewall-2\" to use the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "update the configuration of the VNF named \"firewall-2\" with the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "modify the VNF named \"firewall-2\" to utilize the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "adjust the attributes of the VNF named \"firewall-2\" to use the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "change the attributes of the VNF named \"firewall-2\" to have the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "update the attributes of the VNF named \"firewall-2\" with the flavor with 4 CPU, 4GB ram and 20GB disk",
+            "modify the configuration of the VNF named \"firewall-2\" to have the flavor with 4 CPU, 4GB ram and 20GB disk"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "firewall-2",
+                "flavor": {
+                    "cpu": 4,
+                    "ram_gb": 4,
+                    "disk_gb": 20
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify the SFC named \"sfc1\" to filter only incoming HTTP traffic",
+            "update the SFC with the name \"sfc1\" to allow only incoming HTTP traffic",
+            "change SFC \"sfc1\" to filter incoming HTTP traffic",
+            "alter the SFC named \"sfc1\" to only allow incoming HTTP traffic",
+            "update SFC \"sfc1\" to include only incoming HTTP traffic",
+            "edit the SFC named \"sfc1\" to filter incoming HTTP traffic",
+            "adjust SFC \"sfc1\" to only permit incoming HTTP traffic",
+            "revise the SFC with the name \"sfc1\" to filter only incoming HTTP traffic",
+            "amend SFC \"sfc1\" to include only incoming HTTP traffic",
+            "modify the SFC named \"sfc1\" to allow only incoming HTTP traffic"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:80-80"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "make changes to the SFC named \"sfc1\" to filter only HTTPS traffic",
+            "update the SFC with the name \"sfc1\" to allow only HTTPS traffic",
+            "adjust SFC \"sfc1\" to only permit HTTPS traffic",
+            "modify the SFC named \"sfc1\" to allow only HTTPS traffic",
+            "revise the SFC with the name \"sfc1\" to filter only HTTPS traffic",
+            "change SFC \"sfc1\" to filter HTTPS traffic",
+            "edit the SFC named \"sfc1\" to filter only HTTPS traffic",
+            "alter the SFC named \"sfc1\" to only allow HTTPS traffic",
+            "amend SFC \"sfc1\" to include only HTTPS traffic",
+            "update SFC \"sfc1\" to include only HTTPS traffic"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:443-443"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify the SFC named \"sfc1\" to only allow traffic on port 8080",
+            "update the SFC with the name \"sfc1\" to filter traffic only on port 8080",
+            "change SFC \"sfc1\" to allow traffic only on port 8080",
+            "alter the SFC named \"sfc1\" to only permit traffic on port 8080",
+            "update SFC \"sfc1\" to include only traffic on port 8080",
+            "edit the SFC named \"sfc1\" to filter traffic only on port 8080",
+            "adjust SFC \"sfc1\" to only permit traffic on port 8080",
+            "revise the SFC with the name \"sfc1\" to filter traffic only on port 8080",
+            "amend SFC \"sfc1\" to include only traffic on port 8080",
+            "modify the SFC named \"sfc1\" to allow traffic only on port 8080"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:8080-8080"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "make changes to the SFC named \"sfc1\" to filter all traffic",
+            "update the SFC with the name \"sfc1\" to allow all traffic",
+            "adjust SFC \"sfc1\" to permit all traffic",
+            "modify the SFC named \"sfc1\" to allow all traffic",
+            "revise the SFC with the name \"sfc1\" to filter all traffic",
+            "change SFC \"sfc1\" to filter all traffic",
+            "edit the SFC named \"sfc1\" to filter all traffic",
+            "alter the SFC named \"sfc1\" to allow all traffic",
+            "amend SFC \"sfc1\" to include all traffic",
+            "update SFC \"sfc1\" to include all traffic"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:0-65535"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify the SFC named \"sfc1\" to filter only traffic from IP range 192.168.0.0/24",
+            "update the SFC with the name \"sfc1\" to allow only traffic from IP range 192.168.0.0/24",
+            "change SFC \"sfc1\" to filter traffic only from IP range 192.168.0.0/24",
+            "alter the SFC named \"sfc1\" to only permit traffic from IP range 192.168.0.0/24",
+            "update SFC \"sfc1\" to include only traffic from IP range 192.168.0.0/24",
+            "edit the SFC named \"sfc1\" to filter traffic only from IP range 192.168.0.0/24",
+            "adjust SFC \"sfc1\" to only permit traffic from IP range 192.168.0.0/24",
+            "revise the SFC with the name \"sfc1\" to filter traffic only from IP range 192.168.0.0/24",
+            "amend SFC \"sfc1\" to include only traffic from IP range 192.168.0.0/24",
+            "modify the SFC named \"sfc1\" to allow traffic only from IP range 192.168.0.0/24"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "192.168.0.0/24 -> 0.0.0.0/0:0-65535"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the VNF with the name \"lb-instance\"",
+            "delete the VNF named \"lb-instance\"",
+            "destroy the VNF named \"lb-instance\"",
+            "terminate the VNF with the name \"lb-instance\"",
+            "eliminate the VNF named \"lb-instance\"",
+            "uninstall the VNF with the name \"lb-instance\"",
+            "obliterate the VNF named \"lb-instance\"",
+            "exterminate the VNF with the name \"lb-instance\"",
+            "annihilate the VNF named \"lb-instance\"",
+            "erase the VNF with the name \"lb-instance\""
+        ],
+        "output": {
+            "action": "destroy_vnf",
+            "destroy_vnf": {
+                "name": "lb-instance"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the VNF with the name \"router-instance\"",
+            "delete the VNF named \"router-instance\"",
+            "destroy the VNF named \"router-instance\"",
+            "terminate the VNF with the name \"router-instance\"",
+            "eliminate the VNF named \"router-instance\"",
+            "uninstall the VNF with the name \"router-instance\"",
+            "obliterate the VNF named \"router-instance\"",
+            "exterminate the VNF with the name \"router-instance\"",
+            "annihilate the VNF named \"router-instance\"",
+            "erase the VNF with the name \"router-instance\""
+        ],
+        "output": {
+            "action": "destroy_vnf",
+            "destroy_vnf": {
+                "name": "router-instance"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the VNF with the name \"firewall2\"",
+            "delete the VNF named \"firewall2\"",
+            "destroy the VNF named \"firewall2\"",
+            "terminate the VNF with the name \"firewall2\"",
+            "eliminate the VNF named \"firewall2\"",
+            "uninstall the VNF with the name \"firewall2\"",
+            "obliterate the VNF named \"firewall2\"",
+            "exterminate the VNF with the name \"firewall2\"",
+            "annihilate the VNF named \"firewall2\"",
+            "erase the VNF with the name \"firewall2\""
+        ],
+        "output": {
+            "action": "destroy_vnf",
+            "destroy_vnf": {
+                "name": "firewall2"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the SFC named \"sfc-instance\"",
+            "delete the SFC named \"sfc-instance\"",
+            "destroy the SFC named \"sfc-instance\"",
+            "terminate the SFC with the name \"sfc-instance\"",
+            "eliminate the SFC named \"sfc-instance\"",
+            "uninstall the SFC with the name \"sfc-instance\"",
+            "obliterate the SFC named \"sfc-instance\"",
+            "exterminate the SFC with the name \"sfc-instance\"",
+            "annihilate the SFC named \"sfc-instance\"",
+            "erase the SFC with the name \"sfc-instance\""
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "sfc-instance"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the SFC named \"network-flow\"",
+            "delete the SFC named \"network-flow\"",
+            "destroy the SFC named \"network-flow\"",
+            "terminate the SFC with the name \"network-flow\"",
+            "eliminate the SFC named \"network-flow\"",
+            "uninstall the SFC with the name \"network-flow\"",
+            "obliterate the SFC named \"network-flow\"",
+            "exterminate the SFC with the name \"network-flow\"",
+            "annihilate the SFC named \"network-flow\"",
+            "erase the SFC with the name \"network-flow\""
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "network-flow"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the SFC named \"security-chain\"",
+            "delete the SFC named \"security-chain\"",
+            "destroy the SFC named \"security-chain\"",
+            "terminate the SFC with the name \"security-chain\"",
+            "eliminate the SFC named \"security-chain\"",
+            "uninstall the SFC with the name \"security-chain\"",
+            "obliterate the SFC named \"security-chain\"",
+            "exterminate the SFC with the name \"security-chain\"",
+            "annihilate the SFC named \"security-chain\"",
+            "erase the SFC with the name \"security-chain\""
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "security-chain"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the SFC named \"data-flow\"",
+            "delete the SFC named \"data-flow\"",
+            "destroy the SFC named \"data-flow\"",
+            "terminate the SFC with the name \"data-flow\"",
+            "eliminate the SFC named \"data-flow\"",
+            "uninstall the SFC with the name \"data-flow\"",
+            "obliterate the SFC named \"data-flow\"",
+            "exterminate the SFC with the name \"data-flow\"",
+            "annihilate the SFC named \"data-flow\"",
+            "erase the SFC with the name \"data-flow\""
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "data-flow"
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the SFC named \"traffic-segment\"",
+            "delete the SFC named \"traffic-segment\"",
+            "destroy the SFC named \"traffic-segment\"",
+            "terminate the SFC with the name \"traffic-segment\"",
+            "eliminate the SFC named \"traffic-segment\"",
+            "uninstall the SFC with the name \"traffic-segment\"",
+            "obliterate the SFC named \"traffic-segment\"",
+            "exterminate the SFC with the name \"traffic-segment\"",
+            "annihilate the SFC named \"traffic-segment\"",
+            "erase the SFC with the name \"traffic-segment\""
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "traffic-segment"
+            }
+        }
+    },
+
+    {
+        "intents": [
+            "make a firewall with 2 CPU. The firewall name should be \"example firewall\"",
+            "Create a firewall with two CPUs, and name it \"example firewall\".",
+            "Design a firewall utilizing dual CPUs and call it \"example firewall\".",
+            "Set up a firewall that includes 2 CPUs, naming it \"example firewall\".",
+            "Build a firewall featuring two CPUs, to be named \"example firewall\".",
+            "Construct a firewall with a pair of CPUs and assign it the name \"example firewall\".",
+            "Configure a firewall equipped with 2 CPUs and label it \"example firewall\".",
+            "Establish a firewall comprising 2 CPUs and designate it as \"example firewall\".",
+            "Implement a firewall with 2 CPUs and give it the name \"example firewall\".",
+            "Set up a dual-CPU firewall and name it \"example firewall\"."
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "example firewall",
+                "vnf_type": "fw",
+                "flavor": {
+                    "cpu": 2,
+                    "ram_gb": 2,
+                    "disk_gb": 10
+                },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "make 2 firewalls with 2 CPU. The firewall name should be \"my-firewall\"",
+            "Create two firewalls with 2 CPUs each. The firewall name should be \"my-firewall\".",
+            "Set up two firewalls, each with 2 CPUs, and name them \"my-firewall\".",
+            "Build two firewalls featuring 2 CPUs apiece, and name them \"my-firewall\".",
+            "Construct two firewalls with dual CPUs, to be named \"my-firewall\".",
+            "Deploy two firewalls, each equipped with 2 CPUs, and call them \"my-firewall\".",
+            "Initiate two firewalls with 2 CPUs each, and designate them as \"my-firewall\".",
+            "Establish two firewalls with 2 CPUs each and assign them the name \"my-firewall\".",
+            "Provision two firewalls, both with 2 CPUs, and name them \"my-firewall\".",
+            "Implement two firewalls, each featuring 2 CPUs, and label them \"my-firewall\"."
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "my-firewall",
+                "vnf_type": "fw",
+                "flavor": {
+                    "cpu": 2,
+                    "ram_gb": 2,
+                    "disk_gb": 10
+                },
+                "num_instances": 2
+            }
+        }
+    },
+    {
+        "intents": [
+            "make 5 ids with 1 CPU and 1GB ram each. The ids name should be \"public-ids\"",
+            "Create five IDS with 1 CPU and 1GB RAM each. The IDS name should be \"public-ids\".",
+            "Set up five IDS, each with 1 CPU and 1GB of RAM, and name them \"public-ids\".",
+            "Build five IDS featuring 1 CPU and 1GB RAM apiece, and name them \"public-ids\".",
+            "Construct five IDS with a single CPU and 1GB RAM each, to be named \"public-ids\".",
+            "Deploy five IDS, each equipped with 1 CPU and 1GB RAM, and call them \"public-ids\".",
+            "Initiate five IDS with 1 CPU and 1GB RAM each, and designate them as \"public-ids\".",
+            "Establish five IDS with 1 CPU and 1GB RAM each and assign them the name \"public-ids\".",
+            "Provision five IDS, each with 1 CPU and 1GB RAM, and name them \"public-ids\".",
+            "Implement five IDS, each featuring 1 CPU and 1GB RAM, and label them \"public-ids\"."
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "public-ids",
+                "vnf_type": "ids",
+                "flavor": {
+                    "cpu": 1,
+                    "ram_gb": 1,
+                    "disk_gb": 10
+                },
+                "num_instances": 5
+            }
+        }
+    },
+    {
+        "intents": [
+            "create 4 load balancers with 1 CPU and 5GB storage each. The name should be \"backend-lb\"",
+            "Create four load balancers with 1 CPU and 5GB of storage each. The name should be \"backend-lb\".",
+            "Set up four load balancers, each with 1 CPU and 5GB of storage, and name them \"backend-lb\".",
+            "Build four load balancers featuring 1 CPU and 5GB of storage apiece, and name them \"backend-lb\".",
+            "Construct four load balancers with a single CPU and 5GB of storage each, to be named \"backend-lb\".",
+            "Deploy four load balancers, each equipped with 1 CPU and 5GB of storage, and call them \"backend-lb\".",
+            "Initiate four load balancers with 1 CPU and 5GB of storage each, and designate them as \"backend-lb\".",
+            "Establish four load balancers with 1 CPU and 5GB of storage each and assign them the name \"backend-lb\".",
+            "Provision four load balancers, each with 1 CPU and 5GB of storage, and name them \"backend-lb\".",
+            "Implement four load balancers, each featuring 1 CPU and 5GB of storage, and label them \"backend-lb\"."
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "backend-lb",
+                "vnf_type": "lb",
+                "flavor": {
+                    "cpu": 1,
+                    "ram_gb": 2,
+                    "disk_gb": 5
+                },
+                "num_instances": 4
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"mysfc\" with firewall and ids. there should be 3 ids. It should have a maximum bandwidth of 600Mbps and no latency requirement. Apply traffic filtering on port 8080 and all incoming traffic on port 2222.",
+            "Set up an SFC called \"mysfc\" that includes a firewall and three IDS. Ensure a maximum bandwidth of 600Mbps with no latency requirements. Filter traffic on port 8080 and allow all incoming traffic on port 2222.",
+            "Build an SFC named \"mysfc\" featuring a firewall and three IDS. It should support up to 600Mbps bandwidth and have no latency constraints. Apply filtering to traffic on port 8080 and all incoming traffic on port 2222.",
+            "Construct an SFC named \"mysfc\" with a firewall and three IDS, providing a maximum bandwidth of 600Mbps and no latency requirement. Implement traffic filtering on port 8080 and all incoming traffic on port 2222.",
+            "Deploy an SFC named \"mysfc\" including a firewall and three IDS. It should have a bandwidth cap of 600Mbps and no latency specifications. Filter traffic on port 8080 and accept all incoming traffic on port 2222.",
+            "Initiate an SFC named \"mysfc\" with a firewall and three IDS. Ensure a maximum bandwidth of 600Mbps with no latency demands. Apply filtering for traffic on port 8080 and all incoming traffic on port 2222.",
+            "Establish an SFC called \"mysfc\" with a firewall and three IDS. It should handle up to 600Mbps bandwidth and have no latency requirements. Filter traffic on port 8080 and all incoming traffic on port 2222.",
+            "Configure an SFC named \"mysfc\" to include a firewall and three IDS. It should provide a maximum bandwidth of 600Mbps with no latency constraints. Apply filtering on port 8080 and all incoming traffic on port 2222.",
+            "Set up an SFC \"mysfc\" with a firewall and three IDS, ensuring a maximum bandwidth of 600Mbps and no latency requirement. Filter traffic on port 8080 and all incoming traffic on port 2222.",
+            "Create an SFC \"mysfc\" featuring a firewall and three IDS. It should support a maximum bandwidth of 600Mbps and no latency requirement. Implement traffic filtering on port 8080 and all incoming traffic on port 2222."
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "mysfc",
+                "max_bandwidth_mbps": 600,
+                "delay_requirement": "normal",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:8080-8080",
+                    "0.0.0.0/0 -> 0.0.0.0/0:2222-2222"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "fw",
+                        "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "ids",
+                        "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                        "num_instances": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"hellosfc\" with 3 firewall. It should have a maximum bandwidth of 1000Mbps. Apply traffic filtering on port 80.",
+            "Create an SFC named \"hellosfc\" with three firewalls. It should have a maximum bandwidth of 1000Mbps. Apply traffic filtering on port 80.",
+            "Set up an SFC called \"hellosfc\" that includes three firewalls. Ensure a maximum bandwidth of 1000Mbps and apply traffic filtering on port 80.",
+            "Build an SFC named \"hellosfc\" featuring three firewalls. It should support up to 1000Mbps bandwidth and filter traffic on port 80.",
+            "Construct an SFC named \"hellosfc\" with three firewalls, providing a maximum bandwidth of 1000Mbps and traffic filtering on port 80.",
+            "Deploy an SFC named \"hellosfc\" including three firewalls. It should have a bandwidth cap of 1000Mbps and apply traffic filtering on port 80.",
+            "Initiate an SFC named \"hellosfc\" with three firewalls. Ensure a maximum bandwidth of 1000Mbps and apply filtering for traffic on port 80.",
+            "Establish an SFC called \"hellosfc\" with three firewalls. It should handle up to 1000Mbps bandwidth and filter traffic on port 80.",
+            "Set up an SFC \"hellosfc\" with three firewalls, ensuring a maximum bandwidth of 1000Mbps and traffic filtering on port 80.",
+            "Create an SFC \"hellosfc\" featuring three firewalls. It should support a maximum bandwidth of 1000Mbps and implement traffic filtering on port 80."
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "hellosfc",
+                "max_bandwidth_mbps": 1000,
+                "delay_requirement": "normal",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:80-80"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "fw",
+                        "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                        "num_instances": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"client-sfc\" with 1 lb and 3 ids for https traffic. It should have a maximum bandwidth of 1000Mbps.",
+            "Create an SFC named \"client-sfc\" with one load balancer and three IDS for HTTPS traffic. It should have a maximum bandwidth of 1000Mbps.",
+            "Set up an SFC called \"client-sfc\" that includes one load balancer and three IDS for HTTPS traffic. Ensure a maximum bandwidth of 1000Mbps.",
+            "Build an SFC named \"client-sfc\" featuring one load balancer and three IDS for HTTPS traffic. It should support up to 1000Mbps bandwidth.",
+            "Construct an SFC named \"client-sfc\" with one load balancer and three IDS for HTTPS traffic, providing a maximum bandwidth of 1000Mbps.",
+            "Deploy an SFC named \"client-sfc\" including one load balancer and three IDS for HTTPS traffic. It should have a bandwidth cap of 1000Mbps.",
+            "Initiate an SFC named \"client-sfc\" with one load balancer and three IDS for HTTPS traffic. Ensure a maximum bandwidth of 1000Mbps.",
+            "Establish an SFC called \"client-sfc\" with one load balancer and three IDS for HTTPS traffic. It should handle up to 1000Mbps bandwidth.",
+            "Set up an SFC \"client-sfc\" with one load balancer and three IDS for HTTPS traffic, ensuring a maximum bandwidth of 1000Mbps.",
+            "Create an SFC \"client-sfc\" featuring one load balancer and three IDS for HTTPS traffic. It should support a maximum bandwidth of 1000Mbps."
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "client-sfc",
+                "max_bandwidth_mbps": 1000,
+                "delay_requirement": "normal",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:443-443"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "lb",
+                        "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                        "num_instances": 1
+                    },
+                    {
+                        "vnf_type": "ids",
+                        "flavor":  {
+                "cpu": 1,
+                "ram_gb": 2,
+                "disk_gb": 10
+        },
+                        "num_instances": 3
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "delete sfc named \"banana\"",
+            "Remove the SFC called \"banana\".",
+            "Eliminate the SFC with the name \"banana\".",
+            "Terminate the SFC labeled \"banana\".",
+            "Get rid of the SFC named \"banana\".",
+            "Dispose of the SFC titled \"banana\".",
+            "Take out the SFC named \"banana\".",
+            "Abolish the SFC identified as \"banana\".",
+            "Clear the SFC named \"banana\".",
+            "Withdraw the SFC known as \"banana\"."
+        ],
+        "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "banana"
+            }
+        }
+    },
+    {
+        "intents": [
+            "make a change to vnf \"existing-vnf\" with a new flavor that has 2 cpu and 2GB ram",
+            "Update the VNF named \"existing-vnf\" with a new flavor that includes 2 CPUs and 2GB of RAM.",
+            "Modify the VNF \"existing-vnf\" to use a new flavor with 2 CPU cores and 2GB of RAM.",
+            "Change the VNF \"existing-vnf\" to a new flavor featuring 2 CPUs and 2GB of RAM.",
+            "Apply a new flavor to the VNF \"existing-vnf\" with 2 CPUs and 2GB of RAM.",
+            "Revise the VNF \"existing-vnf\" by assigning a new flavor with 2 CPU cores and 2GB RAM.",
+            "Switch the VNF \"existing-vnf\" to a new flavor with 2 CPU cores and 2GB of RAM.",
+            "Set the VNF \"existing-vnf\" to use a new flavor offering 2 CPUs and 2GB of RAM.",
+            "Change the configuration of VNF \"existing-vnf\" to a new flavor with 2 CPUs and 2GB of RAM.",
+            "Modify the VNF \"existing-vnf\" to include a new flavor that has 2 CPUs and 2GB RAM."
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "existing-vnf",
+                "flavor": {
+                    "cpu": 2,
+                    "ram_gb": 2
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "Remove the firewall named \"firewall-1\".",
+            "Delete the firewall called \"firewall-1\".",
+            "Eliminate the firewall labeled \"firewall-1\".",
+            "Get rid of the firewall named \"firewall-1\".",
+            "Abolish the firewall identified as \"firewall-1\".",
+            "Terminate the firewall titled \"firewall-1\".",
+            "Clear the firewall named \"firewall-1\".",
+            "Take out the firewall with the name \"firewall-1\".",
+            "Withdraw the firewall known as \"firewall-1\".",
+            "Dispose of the firewall named \"firewall-1\"."
+        ],
+        "output": {
+            "action": "destroy_vnf",
+            "destroy_vnf": {
+                "name": "firewall-1"
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the SFC named \"sfc3\" with real time latency requirements",
+            "Modify the SFC \"sfc3\" to incorporate real-time latency requirements.",
+            "Revise the SFC \"sfc3\" by adding real-time latency requirements.",
+            "Change the SFC named \"sfc3\" to feature real-time latency requirements.",
+            "Adjust the SFC \"sfc3\" to have real-time latency requirements.",
+            "Apply real-time latency requirements to the SFC named \"sfc3\".",
+            "Set the SFC \"sfc3\" with real-time latency requirements.",
+            "Update the configuration of SFC \"sfc3\" to include real-time latency requirements.",
+            "Incorporate real-time latency requirements into the SFC named \"sfc3\".",
+            "Enhance the SFC \"sfc3\" by defining real-time latency requirements."
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc3",
+                "delay_requirement": "real-time"
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify the SFC named \"sfc1\" to allow traffic from IP range 192.168.0.0/24",
+            "Update the SFC \"sfc1\" to allow traffic from the IP range 192.168.0.0/24.",
+            "Adjust the SFC \"sfc1\" to accept traffic from the IP range 192.168.0.0/24.",
+            "Change the SFC named \"sfc1\" to enable traffic from the IP range 192.168.0.0/24.",
+            "Revise the SFC \"sfc1\" to permit traffic from IP range 192.168.0.0/24.",
+            "Set the SFC \"sfc1\" to allow traffic originating from the IP range 192.168.0.0/24.",
+            "Configure the SFC named \"sfc1\" to accept traffic from the IP range 192.168.0.0/24.",
+            "Apply changes to SFC \"sfc1\" to allow traffic from the IP address range 192.168.0.0/24.",
+            "Enable traffic from IP range 192.168.0.0/24 on the SFC named \"sfc1\".",
+            "Update the settings of SFC \"sfc1\" to allow traffic from the IP range 192.168.0.0/24."
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "192.168.0.0/24 -> 0.0.0.0/0:0-65535"
+                ]
+            }
+        }
+    }
+]
+

@@ -1,0 +1,152 @@
+[
+    {
+        "intents": [
+            "make four firewalls with 1 CPU and 6GB storage. The firewall name should be \"example firewall\""
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "example firewall",
+                "vnf_type": "fw",
+                "flavor": {
+                    "cpu": 1,
+                    "ram_gb": 2,
+                    "disk_gb": 6
+                },
+                "num_instances": 4
+            }
+        }
+    },
+    {
+        "intents": [
+            "init a VNF \"vnf-instance\" using the generic type with 2 cpu and 4GB ram"
+        ],
+        "output": {
+            "action": "create_vnf",
+            "create_vnf": {
+                "name": "vnf-instance",
+                "vnf_type": "generic",
+                "flavor": {
+                    "cpu": 2,
+                    "ram_gb": 4,
+                    "disk_gb": 10
+                },
+                "num_instances": 1
+            }
+        }
+    },
+    {
+        "intents": [
+            "create an SFC named \"sfc1\" with five firewall and ids. It should have a maximum bandwidth of 500Mbps and no latency requirement. Apply traffic filtering on port 8088 and all incoming traffic on port 22."
+        ],
+        "output": {
+            "action": "create_sfc",
+            "create_sfc": {
+                "name": "sfc1",
+                "max_bandwidth_mbps": 500,
+                "delay_requirement": "normal",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:8088-8088",
+                    "0.0.0.0/0 -> 0.0.0.0/0:22-22"
+                ],
+                "vnfs": [
+                    {
+                        "vnf_type": "fw",
+                        "flavor": {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 5
+                    },
+                    {
+                        "vnf_type": "ids",
+                        "flavor": {
+                            "cpu": 1,
+                            "ram_gb": 2,
+                            "disk_gb": 10
+                        },
+                        "num_instances": 1
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify sfc \"sfc1\" to filter all traffic on port range 4000 to 5000. Also filter http traffic"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "0.0.0.0/0 -> 0.0.0.0/0:4000-5000",
+                    "0.0.0.0/0 -> 0.0.0.0/0:80-80"
+                ]
+            }
+        }
+    },
+    {
+        "intents": [
+            "delete sfc named \"sfc1\""
+        ],
+            "output": {
+            "action": "destroy_sfc",
+            "destroy_sfc": {
+                "name": "sfc1"
+            }
+        }
+    },
+    {
+        "intents": [
+            "update vnf \"existing-vnf\" with a new flavor that has 3GB ram"
+        ],
+        "output": {
+            "action": "update_vnf",
+            "update_vnf": {
+                "name": "existing-vnf",
+                "flavor": {
+                    "ram_gb": 3
+                }
+            }
+        }
+    },
+    {
+        "intents": [
+            "remove the firewall named \"firewall-1\""
+        ],
+            "output": {
+            "action": "destroy_vnf",
+            "destroy_vnf": {
+                "name": "firewall-1"
+            }
+        }
+    },
+    {
+        "intents": [
+            "update the SFC named \"sfc3\" with real time latency requirements"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc3",
+                "delay_requirement": "real-time"
+            }
+        }
+    },
+    {
+        "intents": [
+            "modify the SFC named \"sfc1\" to allow traffic from IP range 10.1.1.0/24"
+        ],
+        "output": {
+            "action": "update_sfc",
+            "update_sfc": {
+                "name": "sfc1",
+                "flow_classifiers": [
+                    "10.1.1.0/24 -> 0.0.0.0/0:0-65535"
+                ]
+            }
+        }
+    }
+]

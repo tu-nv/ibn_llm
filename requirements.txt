@@ -1,0 +1,13 @@
+# langchain==0.1.20
+# langchain-community==0.0.38
+langchain
+langchain-community
+datasets
+langchain_chroma
+langchain_openai
+pysqlite3-binary
+ollama
+jsondiff
+numpy
+scikit-learn
+SciencePlots
