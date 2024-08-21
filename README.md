@@ -4,6 +4,10 @@
     CUDA_VISIBLE_DEVICES=0 OLLAMA_HOST=0.0.0.0:11434 ollama serve
     CUDA_VISIBLE_DEVICES=1 OLLAMA_HOST=0.0.0.0:11435 ollama serve
     ```
+- Create a `secret.py` file for openAI API key. Can put a dummy key if do not use chatGPT.
+    ```
+    echo 'OPENAI_API_KEY = "key"' > secret.py
+    ```
 - Run evaluation
     ```
     python main.py

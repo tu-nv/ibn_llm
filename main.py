@@ -51,6 +51,12 @@ client = Client(host=args.ollama_server_url , timeout=60)
 
 for num_examples in args.num_examples:
     for model in ["formal_spec_ft", "qwen2", "llama3.1", "gemma2", "gemma2:27b", "qwen2:72b", "llama3.1:70b"]:
+        # too much examples in big model cause timeout
+        if num_examples > 1 and model in ["qwen2:72b", "llama3.1:70b"]:
+            continue
+        # this test has same result when add example = false
+        if args.continuous_learning and num_examples == 0:
+            continue
 
         # create example selector with one example, then clear the data and add all examples
         # this is a trick to reset data and remove data from continuous learning in previous run
@@ -59,12 +65,6 @@ for num_examples in args.num_examples:
         for example in trainset:
             example_selector.add_example(example)
 
-        # too much examples in big model cause timeout
-        if num_examples > 1 and model in ["qwen2:72b", "llama3.1:70b"]:
-            continue
-        # this test has same result when add example = false
-        if args.continuous_learning and num_examples == 0:
-            continue
         print("\n\n=====================================")
         print(f"Start eval on use case: {args.use_case}, model: {model}, num context examples: {num_examples}, continuous learning: {args.continuous_learning}")
         sys.stdout.flush()
@@ -126,7 +126,7 @@ for num_examples in args.num_examples:
                 num_correct_translation, total_translation = compare_result(expected_output, actual_output)
 
                 if args.continuous_learning and num_examples > 0 and num_correct_translation < total_translation:
-                    example_selector.add_example({"instruction": intent, "output": expected_output})
+                    example_selector.add_example({"instruction": intent, "output": json.dumps(expected_output)})
                     print(f"Wrong output, add example!")
 
                 if num_correct_translation == 0:
