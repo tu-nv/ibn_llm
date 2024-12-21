@@ -20,3 +20,7 @@
 ## How to add new use case
 - Make a copy of `example_use_case` then modify the files to fit your use case.
 - Modify `main.py` to add new use case.
+
+## Publication
+To understand how this system work, please checkout our publication:
+- Van Tu, Nguyen; Yoo, Jae-Hyoung; Hong, James Won-Ki; Intent-based Network Configuration using Large Language Models; International Journal of Network Management (IJNM, SCIE), vol. 35, Jan 2025, e2313.
